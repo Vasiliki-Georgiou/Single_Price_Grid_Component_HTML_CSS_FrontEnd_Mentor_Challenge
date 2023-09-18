@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: hsl(204, 43%, 93%);
+    background: linear-gradient(hsl(204, 43%, 93%), hsl(218, 22%, 67%, 0.3), hsl(204, 43%, 93%));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.presentation {
+   width: 300px;
+   background-color: #fff;
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+   padding: 16px;
+}
+
+.presentation h3 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+}
+
+.presentation > p {
+    color: hsl(71, 73%, 54%);
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.presentation p:last-child {
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+
+.sign-up, .advantages {
+    width: 300px;
+    height: 270px;
+    color: #fff;
+    padding: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.sign-up {
+    background-color: hsl(179, 62%, 43%);
+}
+
+.sign-up strong {
+    font-size: 32px;
+}
+
+.sign-up small {
+    color: hsl(204, 43%, 93%);
+    font-weight: 400;
+    font-size: 16px;
+    display: inline-block;
+    transform: translate(10%, -30%);
+}
+
+.sign-up button {
+    background-color: hsl(71, 73%, 54%);
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 0;
+    font-weight: 700;
+    margin: 16px 0;
+    box-shadow: 0 4px 4px hsl(218, 22%, 67%, 0.3);
+}
+
+.advantages {
+    background-color: hsl(179, 47%, 52%, 1);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.advantages ul {
+    transform: translateX(-14%);
+}
+
+.advantages ul li {
+    list-style-type: none;
+    color:hsl(204, 43%, 93%);
+}
+
+@media(min-width: 1024px) {
+
+    .presentation {
+        width: 600px;
+    }
+
+    .bottom-container {
+        display: flex;
+    }
+
+    .sign-up {
+        border-bottom-left-radius: 8px;
+    }
+
+    .advantages {
+        border-bottom-left-radius: 0;
+    }
+}
